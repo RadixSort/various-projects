@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body onload>
+    <div id="header">
+        <div id="logo">
+            Bookstore
+        </div>
+        <div id="welcomeBanner">
+            Welcome to the UBC Bookstore!
+        </div>
+        <button id = "showCart" align = "right" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Cart
+        </button>
+    </div>
+
+    <div id="mainContent">
+        <div id="navigationMenu">
+            <ul id="sidebarlist">
+                <li>All Items</li>
+                <li>Books</li>
+                <li>Clothing</li>
+                <li>Tech</li>
+                <li>Gifts</li>
+                <li>Stationary</li>
+                <li>Supplies</li>
+                <li>
+                  Filter Prices ($):
+                  <input type="text" id="filterValue" value= "0">
+                  <button type="submit" id="submitFilter" onclick="initPage()"> Filter</button>
+                </li>
+            </ul>
+        </div>
+        <div id="productList">
+            <ul>
+                <li id="listBox1">
+                    <image class="product" src="images/Box1_$10.png" />
+                    <div class="price" id="Box1price">
+                        
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('Box1')">
+                        Add
+                    </button>
+                    <button class="removeCart" id="Box1" onclick="removeFromCart('Box1')">
+                        Remove
+                    </button>
+                    <div class="name">Box1</div>
+                </li>
+                <li id="listBox2">
+                    <image class="product" src="images/Box2_$5.png" />
+                    <div class="price" id="Box2price">
+                        
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('Box2')">
+                        Add
+                    </button>
+                    <button class="removeCart" id="Box2" onclick="removeFromCart('Box2')">
+                        Remove
+                    </button>
+                    <div class="name">Box2</div>
+                </li>
+                <li id="listClothes1">
+                    <image class="product" src="images/Clothes1_$20.png" />
+                    <div class="price" id="Clothes1price">
+                        
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('Clothes1')">
+                        Add
+                    </button>
+                    <button class="removeCart" id="Clothes1" onclick="removeFromCart('Clothes1')">
+                        Remove
+                    </button>
+                    <div class="name">Clothes1</div>
+                </li>
+                <li id="listClothes2">
+                    <image class="product" src="images/Clothes2_$30.png" />
+                    <div class="price" id="Clothes2price">
+                        
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('Clothes2')">
+                        Add
+                    </button>
+                    <button class="removeCart" id="Clothes2" onclick="removeFromCart('Clothes2')">
+                        Remove
+                    </button>
+                    <div class="name">Clothes2</div>
+                </li>
+                <li id="listJeans">
+                    <image class="product" src="images/Jeans_$50.png" />
+                    <div class="price" id="Jeansprice" >
+                        
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('Jeans')">
+                        Add
+                    </button>
+                    <button class="removeCart" id="Jeans" onclick="removeFromCart('Jeans')">
+                        Remove
+                    </button>
+                    <div class="name">Jeans</div>
+                </li>
+                <li id="listKeyboard">
+                    <image class="product" src="images/Keyboard_$20.png" />
+                    <div class="price" id="Keyboardprice">
+                        
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('Keyboard')">
+                        Add
+                    </button>
+                    <button class="removeCart" id="Keyboard" onclick="removeFromCart('Keyboard')">
+                        Remove
+                    </button>
+                    <div class="name">Keyboard</div>
+                </li>
+                <li id="listKeyboardCombo">
+                    <image class="product" src="images/KeyboardCombo_$40.png" />
+                    <div class="price" id="KeyboardComboprice">
+                        
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('KeyboardCombo')">
+                        Add
+                    </button>
+                    <button class="removeCart" id="KeyboardCombo" onclick="removeFromCart('KeyboardCombo')">
+                        Remove
+                    </button>
+                    <div class="name">KeyboardCombo</div>
+                </li>
+                <li id="listMice">
+                    <image class="product" src="images/Mice_$20.png" />
+                    <div class="price" id="Miceprice">
+                        
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('Mice')">
+                        Add
+                    </button>
+                    <button class="removeCart" id="Mice" onclick="removeFromCart('Mice')">
+                        Remove
+                    </button>
+                    <div class="name">Mice</div>
+                </li>
+                <li id="listPC1">
+                    <image class="product" src="images/PC1_$350.png" />
+                    <div class="price" id="PC1price">
+                        
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('PC1')">
+                        Add
+                    </button>
+                    <button class="removeCart" id="PC1" onclick="removeFromCart('PC1')">
+                        Remove
+                    </button>
+                    <div class="name">PC1</div>
+                </li>
+                <li id="listPC2">
+                    <image class="product" src="images/PC2_$400.png" />
+                    <div class="price" id="PC2price">
+                        
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('PC2')">
+                        Add
+                    </button>
+                    <button class="removeCart" id="PC2" onclick="removeFromCart('PC2')">
+                        Remove
+                    </button>
+                    <div class="name">PC2</div>
+                </li>
+                <li id="listPC3">
+                    <image class="product" src="images/PC3_$300.png" />
+                    <div class="price" id="PC3price" >
+                        
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('PC3')">
+                        Add</button>
+                    <button class="removeCart" id="PC3"onclick="removeFromCart('PC3')">
+                        Remove
+                    </button>
+                    <div class="name">PC3</div>
+                </li>
+                <li id="listTent">
+                    <image class="product" src="images/Tent_$100.png" />
+                    <div class="price" id="Tentprice">
+
+                    </div>
+                    <div class="priceShade" /> </div>    
+                    <image class="cartImg" src="images/cart.png" />     
+                    <button class="addCart" onclick="addToCart('Tent')">
+                        Add
+                    </button>
+                    <button class="removeCart" id="Tent" onclick="removeFromCart('Tent')">
+                        Remove
+                    </button>
+                    <div class="name">Tent</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Cart:</h4>
+      </div>
+      <div class="modal-body">
+        <p>This is what you have in your cart:</p>
+        <table id = "cartTable" style="width:100%">
+        </table>
+      </div>
+      <div class="modal-footer">
+        <p id = "modalTotalPrice"> Total Price </p>
+        <button type="button" id="checkOut" class="btn btn-primary" onclick="checkOut()">CheckOut</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <div id="footer">
+        Project by Daniel Kim and Kaibo Ma  
+        <span id="timeoutValue">300</span>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/product.cart.js"></script> 
+</html>

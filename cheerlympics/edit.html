@@ -1,0 +1,159 @@
+<div class="" ng-controller="EditController">
+
+    <div id="editContainer" >
+        <div id="tools" ng-show="isEdit()">
+            <div id="toolbar">
+                <div class="toolbar-icon" ng-click="setTool('text')">
+                    <i class="fa fa-font fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="toolbar-icon" ng-click="setTool('sound')">
+                    <i class="fa fa-volume-up  fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="toolbar-icon" ng-click="setTool('color')">
+                    <i class="fa fa-circle  fa-2x" aria-hidden="true" ng-class="color"></i>
+                </div>
+                <div class="toolbar-icon" ng-click="setTool('flag')">
+                    <i class="fa fa-flag fa-2x" aria-hidden="true" ng-if="flag === ''"></i>
+                    <div class="flag-tool flag-icon flag-icon-squared" ng-class="getFlagClass(flag)" ng-if="flag !== ''"></div>
+                </div>
+                <div class="toolbar-icon" ng-click="setTool('anim')">
+                    <i class="fa fa-times-circle fa-2x" aria-hidden="true" ng-if="anim === 'none'"></i>
+                    <i class="fa fa-long-arrow-left fa-2x" aria-hidden="true" ng-if="anim === 'marquee'"></i>
+                    <i class="fa fa-flash fa-2x" aria-hidden="true" ng-if="anim === 'blink'"></i>
+                    <i class="fa fa-hourglass fa-2x" aria-hidden="true" ng-if="anim === ''"></i>
+                </div>
+                <div class="toolbar-divider"></div>
+
+                
+                <div class="toolbar-icon end" ng-click="setTool('delete')">
+                    <i class="fa fa-trash fa-2x" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="extended-toolbar">
+                <div id="text-edit" ng-show="isSet('text')">
+                    <form>
+                        <label><span class="text-label">Line 1</span> <input type="text" class="text-input" ng-model="text.line1"></label>
+                        <label><span class="text-label">Line 2</span> <input type="text" class="text-input" ng-model="text.line2"></label>
+                    </form>
+                </div>
+                <div id="sound-edit" ng-show="tool === 'sound'">
+                    <div class="sound">
+                        <strike>Record</strike>
+                    </div>
+
+                    <div ng-repeat="sound in sounds">
+                        <div class="sound" ng-class="isSoundSelected(sound.name)" ng-click="setSound(sound.name)">
+                            {{sound.name}}
+                        </div>
+                    </div>
+                </div>
+                <div id="color-edit" ng-show="tool === 'color'">
+                    <div class="color-icon" ng-click="setColor('white')">
+                        <i class="fa fa-circle white fa-2x" aria-hidden="true"></i>
+                    </div>                    
+                    <div class="color-icon" ng-click="setColor('magenta')">
+                        <i class="fa fa-circle magenta fa-2x" aria-hidden="true"></i>
+                    </div>                    
+                    <div class="color-icon" ng-click="setColor('orange')">
+                        <i class="fa fa-circle orange fa-2x" aria-hidden="true"></i>
+                    </div>                    
+                    <div class="color-icon" ng-click="setColor('cyan')">
+                        <i class="fa fa-circle cyan fa-2x" aria-hidden="true"></i>
+                    </div>                    
+                    <div class="color-icon" ng-click="setColor('limegreen')">
+                        <i class="fa fa-circle limegreen fa-2x" aria-hidden="true"></i>
+                    </div>                    
+                    <div class="color-icon" ng-click="setColor('yellow')">
+                        <i class="fa fa-circle yellow  fa-2x" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+                <div id="flag-edit" ng-show="tool === 'flag'">
+                    <div class="flag" ng-click="setFlag('')">
+                        <i class="fa fa-times"></i><br />
+                        None
+                    </div>
+                    <div class="flag" ng-repeat="country in countries | orderBy: 'countryName'">
+                        <div class="flag-icon flag-icon-class" ng-class="getFlagClass(country.countryCode)" ng-click="setFlag(country.countryCode)"></div>
+                        <div class="flag-name">
+                            {{country.countryName}}
+                        </div>
+                    </div>
+                </div>
+                <div id="anim-edit" ng-show="tool === 'anim'">
+                    <div class="anim-icon" ng-click="setAnim('marquee')">
+                        <i class="fa fa-long-arrow-left fa-2x"></i>
+                    </div>
+                    <div class="anim-icon" ng-click="setAnim('blink')">
+                        <i class="fa fa-flash fa-2x"></i>
+                    </div>
+                    <div class="anim-icon" ng-click="setAnim('none')">
+                        <i class="fa fa-times-circle fa-2x"></i>
+                    </div>
+                </div>
+                <div id="delete" ng-show="tool === 'delete'">
+                    Are you sure you want to delete?
+                    <a ng-href="/" class="btn btn-primary">Yes</a> <a class="btn btn-primary" ng-click="setTool('')">No</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="help" ng-show="help" ng-click="toggleHelp()">
+
+        </div>
+
+        <div id="preview">
+
+        <div id="marquee-animation" ng-click="setTool('')" ng-show="anim === 'marquee'">
+            <div class="marquee-content" class="marquee">
+                Marquee Animation
+                            <div class="no-anim-content flag-icon-background" ng-class="getFlagAndColorClass()">
+                <span>{{text.line1}}</span><br />
+                <span>{{text.line2}}</span>
+            </div>
+            </div>
+        </div>
+
+        <div id="blink-animation" ng-click="setTool('')" ng-show="anim === 'blink'">
+            Blink Animation
+                        <div class="no-anim-content flag-icon-background" ng-class="getFlagAndColorClass()">
+                <span>{{text.line1}}</span><br />
+                <span>{{text.line2}}</span>
+            </div>
+        </div>
+
+        <div id="no-animation" ng-click="setTool('')" ng-show="anim === 'none' || anim === ''">
+            <div class="no-anim-content flag-icon-background" ng-class="getFlagAndColorClass()" ng-click="playSound()">
+                <span>{{text.line1}}</span><br />
+                <span>{{text.line2}}</span>
+            </div>
+        </div>
+        </div>
+
+        <div id="play-button" ng-show="isEdit()">
+            <i class="fa fa-play-circle fa-5x" ng-click="togglePlay()"></i>
+        </div>
+
+        <div id="edit-button" ng-show="!isEdit()">
+            <i class="fa fa-pause-circle fa-2x" ng-click="togglePlay()" style="color: rgba(255,255,255, 0.3)"></i>
+        </div>
+
+        <div id="right-corner-tools" ng-show="isEdit()">
+            <div class="icon">
+                <i class="fa fa-info fa-2x" ng-click="toggleHelp()"></i>
+            </div>
+            <div class="icon">
+                <a ng-href="#!/" style="color: white">
+                <i class="fa fa-mail-reply fa-2x" ng-href="/home"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(function() {
+
+    $('.marqueee').marquee();
+    })
+</script>

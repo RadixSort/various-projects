@@ -1,0 +1,205 @@
+#header, #mainContent, #footer {
+    margin:0px auto;
+    overflow: auto;
+    width: 980px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #eeeeee;
+}
+
+#logo, #welcomeBanner {
+    height: 100px;
+    line-height: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#logo {
+    float: left;
+    width: 200px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background-color: #2e6680;
+    color: white;
+}
+
+#welcomeBanner {
+    float: right;
+    width: 780px;
+    color: #2e6680;
+}
+
+#navigationMenu {
+    float: left;
+    width: 200px;
+}
+
+#navigationMenu ul {
+    list-style: none;
+    padding: 0px;
+}
+#navigationMenu ul li {
+    display: block;
+    width: 200px;
+    float: left;
+    background-color: #2e6680;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#navigationMenu ul li:hover {
+    color: red;
+    background-color: #547c80;
+}
+
+#showCart {
+    float: right;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 55px;
+    width: 200px; 
+    background-color: #2e6680;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#showCart:hover {
+    color: red;
+    background-color: #547c80;
+}
+
+#productList {
+    float: right;
+    width: 750px;
+}
+
+#productList ul {
+    padding: 0px;
+    list-style: none;
+}
+
+#productList ul li {
+    display: block;
+    float: left;
+    padding: 10px;
+    margin: 0px 10px 10px;
+    height: 230px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+#productList ul li:hover {
+    background-color: #aaaaaa;
+}
+
+#timeoutValue {
+    position: absolute;
+     right: 40px;
+}
+
+#productList ul li .product {
+    height: 200px;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+#productList ul li:hover .cartImg {
+    display: block;
+}
+
+#productList ul li .cartImg {
+    position: absolute;
+    height: 160px;
+    width: 190px;
+    top: 15px;
+    left: 15px;
+    display: none;
+}
+
+#productList ul li:hover .addCart {
+    cursor: pointer;
+    display: block;
+}
+
+#productList ul li .addCart {
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    top: 110px;
+    left: 20px;
+    font-size: 17px;
+    background-color: #66CD00;
+    color: white;
+    display: none;
+    
+}
+   
+#productList:hover .removeCart {
+    visibility: visible;
+} 
+.removeCart {
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    top: 110px;
+    left: 120px;
+    font-size: 17px;
+    background-color: #CD3333;
+    color: white;
+    display: none;
+    visibility: hidden;
+}
+
+
+
+
+#productList ul li .price {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    bottom: 40px;
+    opacity: 0.8;
+    color: white;
+    display: none;
+    text-align: center;
+}
+
+#productList ul li:hover .price {
+    display: block;
+}
+
+#productList ul li:hover .priceShade {
+    display: block;
+}
+
+#productList ul li .priceShade {
+    background-color: black;
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    bottom: 70px;
+    opacity: 0.4;
+    display: none;
+}
+
+#footer {
+    text-align: center;
+    color: #2e6680;
+}

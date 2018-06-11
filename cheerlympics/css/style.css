@@ -1,0 +1,415 @@
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iPhone6 {
+    
+}
+
+#appScreen {
+    background-color: white;
+    height: 100%;
+    z-index: 50;
+}
+
+#homeText {
+    color: black;
+}
+
+#editContainer {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#tools {
+    height: 100%;
+    display: flex;
+    z-index: 30;
+    position: absolute;
+}
+
+#toolbar {
+    background-color: rgba(255,255,255,0.3);
+    box-sizing: border-box;
+    border-radius: 30px;
+    
+    box-sizing: padding-box;
+    width: 75px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    vertical-align: center;
+    justify-content: center;
+}
+
+#extended-toolbar {
+    padding: 20px;
+}
+
+.toolbar-icon-selected {
+    color: rgba(255,255,255,0.5);
+}
+
+.line { 
+    width: 100%;
+}
+
+#preview-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#text-edit {
+    padding: 30px;
+    background-color: rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    border-radius: 30px;
+    
+    width: 300px;
+}
+
+#delete {
+    padding: 30px;
+    background-color: rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    border-radius: 30px;
+    
+    width: 300px;
+}
+
+
+#sound-edit {
+    padding: 30px;
+    background-color: rgba(0,0,0,0.9);
+    width: 530px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 320px; 
+
+}
+
+#color-edit {
+    width: 80px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.8);
+            box-sizing: border-box;
+    border-radius: 30px;
+}
+
+#anim-edit {
+    width: 80px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+#flag-edit {
+    width: 450px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    border-radius: 30px;
+    overflow: auto;
+    height: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.flag-tool {
+    font-size: 2em;
+}
+
+.flag {
+    width: 100px;
+    padding: 10px;
+}
+
+.flag-icon-class {
+    padding: 5px;
+    font-size: 2em;
+}
+
+.flag-name {
+    font-size: 1em;
+}
+
+.color-icon {
+    padding: 10px;
+}
+
+.anim-icon {
+    padding: 10px;
+}
+
+.sound {
+    flex: 0.25;
+    background-color: rgba(255,255,255,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.sound-selected {
+    background-color: rgba(255,255,255, 0.7);
+}
+
+#two-line {
+    width: 100%;
+    font-size: 5em;
+}
+
+.line {
+    font-weight: 1000;
+}
+
+.text-input {
+    width: 140px;
+}
+
+.text-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+#preview {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    box-sizing: border-box;
+    vertical-align: center;
+    overflow: hidden;
+}
+
+#help {
+    position: absolute;
+    background-image: url('../img/help.png');
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    overflow: hidden;
+    background-size: contain;
+}
+
+.animated {
+    height: 100%;
+    display: block;
+}
+
+/*.marquee {
+    overflow: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: relative;
+} */
+
+
+
+#animated-content {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    /*animation: marquee 15s linear infinite;*/
+}
+
+#content-text {
+    background-color: black;
+    position:absolute;
+    width: 667px;
+    height: 375px;
+    font-size: 5em;
+    text-align: center;
+    top: 0;
+}
+
+#content-flag {
+    width: 500px;
+    height: 375px;
+    position: absolute;
+}
+
+#preview #line1 {
+    height: 50%;
+}
+
+#preview #line2 {
+    height: 50%;
+}
+
+#preview #line {
+    height: 100%;
+}
+
+.toolbar-icon {
+    padding: 10px;
+    text-align: center;
+}
+
+.toolbar-divider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 1px;
+    background-color: white;
+}
+
+#play-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    z-index: 11;
+}
+
+#edit-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    z-index: 11;
+}
+
+#right-corner-tools {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    z-index: 18;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    padding: 10px;
+}
+
+.magenta {
+    color: magenta;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.cyan {
+    color: cyan;
+}
+
+.limegreen {
+    color: limegreen;
+}
+
+.orange {
+    color: orange;
+}
+
+.white {
+    color: white;
+}
+
+#marquee-animation {
+    width: 667px;
+    height: 375px;
+    position: absolute;
+    background-color: rgba(255,0,0, 0.3);
+    overflow: hidden;
+}
+
+#blink-animation {
+    width: 667px;
+    height: 375px;
+    position: absolute;
+    background-color: rgba(0,0,255, 0.3);
+    overflow: hidden;
+}
+
+#marquee-content {
+    position: relative;
+    overflow: hidden;
+    width: 667px;
+    height: 375px;
+}
+
+#marquee-text {
+    display: block;
+    height: 375px;
+}
+
+#no-animation {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    box-sizing: border-box;
+    vertical-align: center;
+    overflow: hidden;
+}
+
+.no-anim-content {
+    height: 375px;
+    width: 100%;
+    padding: 30px;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.no-anim-content span {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.marquee {
+    animation: marquee 5s linear infinite;
+}
+
+.marquee div {
+    animation: marquee 5s linear infinite;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    width: 200%;
+    height: 30px;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}

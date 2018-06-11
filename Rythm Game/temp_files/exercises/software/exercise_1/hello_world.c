@@ -1,0 +1,70 @@
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+#include "altera_up_avalon_character_lcd.h"
+#define key1 (volatile char*) 0x00002030
+#define key2 (volatile char*) 0x00002020
+#define key3 (volatile char*) 0x00002010
+
+int main(void)
+{
+	alt_up_character_lcd_dev * char_lcd_dev;
+	// open the Character LCD port
+	char_lcd_dev = alt_up_character_lcd_open_dev ("/dev/character_lcd_0");
+	if ( char_lcd_dev == NULL)
+		alt_printf ("Error: could not open character LCD device\n");
+	else
+		alt_printf ("Opened character LCD device\n");
+
+	while(1) {
+
+		while (*key1 == 0) {
+			/* Initialize the character display */
+			alt_up_character_lcd_init (char_lcd_dev);
+			/* Write "Welcome to" in the first row */
+			alt_up_character_lcd_string(char_lcd_dev, "EECE 381");
+			/* Write "the DE2 board" in the second row */
+			char second_row[] = "L2C-17\0";
+			alt_up_character_lcd_set_cursor_pos(char_lcd_dev, 0, 1);
+			alt_up_character_lcd_string(char_lcd_dev, second_row);
+			while (*key1 == 0) {}
+		}
+
+		while (*key2 == 0) {
+			/* Initialize the character display */
+			alt_up_character_lcd_init (char_lcd_dev);
+			/* Write "Welcome to" in the first row */
+			alt_up_character_lcd_string(char_lcd_dev, "TO INFINITY");
+			/* Write "the DE2 board" in the second row */
+			char second_row[] = "AND BEYOND\0";
+			alt_up_character_lcd_set_cursor_pos(char_lcd_dev, 0, 1);
+			alt_up_character_lcd_string(char_lcd_dev, second_row);
+			while (*key2 == 0){}
+		}
+
+		while (*key3 == 0) {
+			/* Initialize the character display */
+			alt_up_character_lcd_init (char_lcd_dev);
+			/* Write "Welcome to" in the first row */
+			alt_up_character_lcd_string(char_lcd_dev, "FLY");
+			/* Write "the DE2 board" in the second row */
+			char second_row[] = "YOU FOOLS\0";
+			alt_up_character_lcd_set_cursor_pos(char_lcd_dev, 0, 1);
+			alt_up_character_lcd_string(char_lcd_dev, second_row);
+			while (*key3 == 0) {}
+		}
+	}
+}

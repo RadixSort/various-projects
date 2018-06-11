@@ -1,0 +1,113 @@
+-----------
+PATCH LOG 0.0.1
+-----------
+  TABLE OF CONTENTS
+    ... Progress Log (completed)
+    ... Patch Goal
+    ... Documentation
+    ... Brain Storm for next patch
+    ... Development Members
+----------
+PROGRESS LOG
+  
+    -/*STEPHEN HU*/
+    -Implemented basic roles and actions.
+    -ADTs all implemented
+    -Nightly actions prototype complete
+    -Citizen's action GUI implemented
+    -First semi functioning prototype
+    
+----------
+PATCH GOAL
+  
+  // Command line operated game with 4 different character choices
+  // Single player; One client assumes the role of every player
+
+  /*STEPHEN HU*/
+  http://wiki.epicmafia.com/index.php?title=Setup693
+  Classic Mafia, is the first ever classic mafia setup. 
+  The roles included in this setup are 3 Villagers, 2 Mafias, a Doctor, and a Cop.
+
+    o Characters made
+      - Mafia : 
+      - Villagers :
+      - Netural : none this patch
+      
+    o Algorithms
+      - to assign players to diff characters (balancing)
+      - to assign number of characters according to number of players
+      Refer: http://www.topped-with-meat.com/connector/mafia.html
+    
+    o Day / Night Activities
+      - Remember First night is seperate from other nights
+      
+    o Play by Play generator
+      - at end of game release play by play and result
+      
+    o should prompt all required Players' inputs in order
+        (all requests must tell who's it aimed for)
+  
+    o should release annoucements;  (declared to public)
+
+-----------
+DOCUMENTATION
+
+  o General Definitions
+    - Players: Client;
+    - Characters: Role of client;
+  
+  o Mafia
+    - GodFather
+    - Mafioso
+  
+  o Villager
+    - Civilian
+    - Doctor
+    - Sheriff
+  
+  o Netural
+    - 
+  
+  o Day Actions
+    - Mafia Private Chat
+    - Public Chat 1/2/3
+    - Lynch Vote open with visible countdown
+    
+  o Order of Night Actions
+    - Bulletproof vests used
+    - Veteran goes on alert
+    - Target Switches and Role-Blockers
+        Witch
+        Bus Driver
+        Escort/Consort
+    - Bodyguards visit, Doctors protect
+    - Framer frames, Arsonist douses
+    - Killing Roles and Suicides
+        Vigilante
+        Mafioso/Godfather
+        Serial Killer
+        Disguiser
+    - Janitor cleans
+    - Investigative roles detect
+    - Mass Deaths
+        Mass Murderer
+        Veteran
+        Arsonist
+    - Annoucement of Happneings
+    
+-----------
+BRAIN STORM
+  o Have an algorithm to take user preferences before pseudo-random assignment (Radix)
+      - Want to very aggressive or lurk more? && be Mafia or Villagers or Neturals? (Radix)
+  o Use any cute sprites or icons or pure text with GUI. (Stephan)
+  o Password feature, save accounts to textfile. (Radix)
+  o Stats for each players per game (and in several games if time allows) exe. how many kills (Radix)
+  
+----------
+DEVELOPEMENT MEMBERS
+    o RadixSort
+    o kvmu
+    o eleanorwong
+    o maknoon
+    o stephenhu3
+    

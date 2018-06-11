@@ -1,0 +1,61 @@
+STORY 7 --UNDO:
+As a player, 
+I want to be able to undo a move I regret, including all ghost moves made since my previous move, 
+so that I can continue the game in the state just before my last move.
+
+Scenario S7.1: Game started and user unmoved;
+Given the game has started
+ and the player hasn't made any moves yet;
+When the player clicks the "UNDO" button;
+Then Restart the game.
+
+Scenario S7.2: Game started and user moved and alive and coin eaten in this move
+Given the game has started
+ and the user has moved
+ and the user is still alive
+ and the user ate a coin in this move
+When  the player hits the "UNDO" button;
+Then The ghosts are moved back to the location at the time of the last move of user
+  and the player moves one unit back to his last location
+  and the coin is restored.
+  
+Scenario S7.3: Game started and user moved and alive and no coin are eaten in this move
+Given the game has started
+ and the user has moved
+ and the user is still alive
+ and the user did not eat a coin in this move
+When  the player hits the "UNDO" button;
+Then The ghosts are moved back to the location at the time of the last move of user
+  and the player moves one unit back to his last location.
+  
+Scenario S7.4: Game started and user moved and died and died at the coin
+Given the game has started
+ and the user has moved
+ and the user died
+ and a coin exist at the location user died
+When  the player hits the "UNDO" button;
+Then The ghosts are moved back to the location at the time of the last move of user
+  and the player is back alive 
+  and the player moves one unit back to his last location.
+  and the coin is restored.
+
+Scenario S7.5: Game started and user moved and died and did not die at a coin
+Given the game has started
+ and the user has moved
+ and the user died
+ and a coin does not exist at the location user died
+When  the player hits the "UNDO" button;
+Then The ghosts are moved back to the location at the time of the last move of user
+  and the player is back alive 
+  and the player moves one unit back to his last location.
+  
+
+Scenario S7.6: User won the game
+Given the user won the game
+When  the player hits the "UNDO" button;
+Then nothing happens.
+
+
+
+  
+

@@ -1,0 +1,328 @@
+<session jtag_chain="" jtag_device="@1: EP2C35 (0x020B40DD)" sof_file="project.sof" top_level_entity="proj1">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance compilation_mode="full" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2012/03/30 23:49:33  #0">
+      <clock name="CLOCK_50" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_trigger_nodes="0" sample_depth="512" trigger_in_enable="no" trigger_in_pin="auto_stp_trigger_in_0" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="ENET_CLK" tap_mode="classic" type="output pin"/>
+          <wire name="ENET_CMD" tap_mode="classic" type="output pin"/>
+          <wire name="ENET_CS_N" tap_mode="classic" type="output pin"/>
+          <wire name="ENET_DATA[0]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[10]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[11]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[12]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[13]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[14]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[15]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[1]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[2]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[3]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[4]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[5]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[6]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[7]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[8]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[9]" tap_mode="classic" type="bidir pin"/>
+          <wire name="nios_system:nios|ENET_CLK_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_CMD_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_CS_N_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_INT_to_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_RD_N_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_RST_N_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_WR_N_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|address[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|chipselect" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|read_n" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|write_n" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|reset_n" tap_mode="classic" type="combinatorial"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="ENET_CLK" tap_mode="classic" type="output pin"/>
+          <wire name="ENET_CMD" tap_mode="classic" type="output pin"/>
+          <wire name="ENET_CS_N" tap_mode="classic" type="output pin"/>
+          <wire name="ENET_DATA[0]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[10]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[11]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[12]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[13]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[14]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[15]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[1]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[2]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[3]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[4]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[5]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[6]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[7]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[8]" tap_mode="classic" type="bidir pin"/>
+          <wire name="ENET_DATA[9]" tap_mode="classic" type="bidir pin"/>
+          <wire name="nios_system:nios|ENET_CLK_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_CMD_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_CS_N_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_INT_to_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_RD_N_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_RST_N_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|ENET_WR_N_from_the_dm9000aCustom" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|address[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|chipselect" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|read_n" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|write_n" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="nios_system:nios|reset_n" tap_mode="classic" type="combinatorial"/>
+        </data_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <net is_signal_inverted="no" name="ENET_CLK"/>
+          <net is_signal_inverted="no" name="ENET_CMD"/>
+          <net is_signal_inverted="no" name="ENET_CS_N"/>
+          <bus is_signal_inverted="no" link="all" name="ENET_DATA" order="lsb_to_msb" radix="hex" state="collapse" type="bidir pin">
+            <net is_signal_inverted="no" name="ENET_DATA[0]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[1]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[2]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[3]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[4]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[5]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[6]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[7]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[8]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[9]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[10]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[11]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[12]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[13]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[14]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_CLK_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_CMD_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_CS_N_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_INT_to_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_RD_N_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_RST_N_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_WR_N_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|reset_n"/>
+          <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|address[0]"/>
+          <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|chipselect"/>
+          <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|read_n"/>
+          <bus is_signal_inverted="no" link="all" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[0]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[1]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[2]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[3]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[4]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[5]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[6]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[7]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[8]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[9]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[10]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[11]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[12]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[13]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[14]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|write_n"/>
+          <bus is_signal_inverted="no" link="all" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[0]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[1]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[2]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[3]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[4]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[5]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[6]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[7]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[8]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[9]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[10]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[11]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[12]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[13]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[14]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[15]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <net is_signal_inverted="no" name="ENET_CLK"/>
+          <net is_signal_inverted="no" name="ENET_CMD"/>
+          <net is_signal_inverted="no" name="ENET_CS_N"/>
+          <bus is_signal_inverted="no" link="all" name="ENET_DATA" order="lsb_to_msb" radix="hex" state="collapse" type="bidir pin">
+            <net is_signal_inverted="no" name="ENET_DATA[0]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[1]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[2]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[3]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[4]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[5]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[6]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[7]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[8]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[9]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[10]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[11]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[12]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[13]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[14]"/>
+            <net is_signal_inverted="no" name="ENET_DATA[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_CLK_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_CMD_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_CS_N_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_INT_to_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_RD_N_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_RST_N_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|ENET_WR_N_from_the_dm9000aCustom"/>
+          <net is_signal_inverted="no" name="nios_system:nios|reset_n"/>
+          <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|address[0]"/>
+          <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|chipselect"/>
+          <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|read_n"/>
+          <bus is_signal_inverted="no" link="all" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[0]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[1]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[2]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[3]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[4]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[5]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[6]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[7]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[8]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[9]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[10]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[11]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[12]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[13]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[14]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|readdata[15]"/>
+          </bus>
+          <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|write_n"/>
+          <bus is_signal_inverted="no" link="all" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata" order="lsb_to_msb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[0]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[1]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[2]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[3]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[4]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[5]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[6]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[7]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[8]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[9]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[10]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[11]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[12]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[13]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[14]"/>
+            <net is_signal_inverted="no" name="nios_system:nios|dm9000aCustom:the_dm9000aCustom|writedata[15]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger CRC="CD859BAF" global_temp="1" is_expanded="true" name="trigger: 2012/03/31 01:02:04  #0" position="pre" power_up_trigger_mode="false" segment_size="256" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'ENET_CS_N' == either edge
+            
+            <power_up enabled="yes">
+            </power_up>
+            <op_node>
+              <op_node left="394" top="103" type="Advanced Trigger Level Result"/>
+            </op_node>
+          </level>
+        </events>
+        <log>
+          <data global_temp="1" name="log: 2012/03/31 01:30:59  #0" power_up_mode="false" sample_depth="512" trigger_position="-1">101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001101111000011000000010111010111110000110000000100000000000000001001111000011000000000111010111110000110000000100000000000000001</data>
+          <extradata>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111T11111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="22"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="32"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="4092"/>
+      <multi attribute="timebars" size="1" value="31"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <embedded_sof_files/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <single attribute="sof manager hidden" value="0"/>
+    <multi attribute="column width" size="18" value="34,34,342,74,68,70,88,100,101,101,101,101,101,101,101,101,107,78"/>
+    <multi attribute="window position" size="9" value="1150,309,478,170,0,50,0,0,100"/>
+  </global_info>
+</session>

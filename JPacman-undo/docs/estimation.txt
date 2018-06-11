@@ -1,0 +1,20 @@
+I = 1 (undo button)
+O = 5 (Started game?, Ghosts, Coins, Life/Death, and Player)
+Q = 7
+F = 1 (File with each line: Game state, Ghost1, Ghost2, ..., Coin Taken, Player Location)
+E = 6 
+
+c1, c2, c3, c4, c5 = 4, 5, 10, 4, 7
+FP = 4*1 + 5*5 + 10*7 + 4*1 + 7*6 = 145
+Z = 9
+
+LOC = Z*FP = 1305
+
+a = 2.4, b = 1.05
+KLOC = 1.305
+
+E(Cocomo) = 2.4 * (1.305)^(1.05) = 3.17 person-months for 8hr/day, 5days/week.
+
+Expect (3.17*8*5*4) hours total for project.
+
+(3.17*8*5*4) / (3*(3.17*4)) = 13 hrs/week for each member.
